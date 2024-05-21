@@ -1,0 +1,94 @@
+/* start products*/ 
+/*чтобы отработал flex*/
+.slick-initialized,
+.slick-slide  
+    .products
+        &-slider
+            &__flex
+                display: flex
+                position: relative
+
+/*стилизация slick-dots*/
+.products-slider
+    cursor: pointer
+    .slick-dots
+        max-height: 205px
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        position: absolute
+        bottom: 20%
+        li
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            margin: 0
+            width: 41px
+            height: 58px
+            span
+                font-style: 'PlayfairDisplay-Regular', sans-serif
+                font-size: 20px
+                line-height: 29px
+                letter-spacing: 0.05em
+                color: rgba(0, 0, 0, 0.3)
+                
+            &.slick-active span
+                font-size: 40px
+                line-height: 58px
+                color: #000000
+                position: relative
+                &::after
+                    content: ''
+                    box-sizing: border-box
+                    width: 2px
+                    height: 54px
+                    background-color: #000000
+                    position: absolute
+                    right: -10px
+         
+.products
+    &-slider
+        &__flex
+            padding-top: 90px
+            justify-content: flex-start
+            align-items: center
+            img
+                margin-left: 40px
+        &__content
+            max-width: 545px
+            h1
+                font-family: 'PlayfairDisplay-Bold', sans-serif
+                font-size: 57px
+                line-height: 145%
+                letter-spacing: 0.05em
+                text-transform: uppercase
+                margin-bottom: 35px
+    &__name,
+    &__price
+        font-family: 'OpenSans-Regular', sans-serif
+        font-size: 20px
+        line-height: 27px
+        margin-bottom: 10px
+    &__price-sale
+        font-family: 'OpenSans-SemiBold', sans-serif
+        font-size: 30px
+        line-height: 41px
+        margin-left: 22px
+    &__button-buy
+        box-sizing: border-box
+        border: none
+        background-color: #303032
+        color: #ffffff
+        font-family: 'OpenSans-Regular', sans-serif
+        font-size: 16px
+        line-height: 22px
+        letter-spacing: 0.13em
+        text-transform: uppercase
+        padding: 18px 81px
+        margin-top: 25px
+        &:hover
+            opacity: 0.9
+        &:focus
+            opacity: 0.7
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5)
+/* end products*/ 

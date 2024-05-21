@@ -1,0 +1,464 @@
+@media screen and ( max-width: 1024px )
+    .container
+        max-width: 984px
+        margin: 0 auto
+
+    .background-color
+        height: 700px
+
+    /*header*/
+
+    .header
+        margin-top: 60px
+
+    /*.products*/
+
+    .products
+        &-slider
+            &__flex
+                padding-top: 60px
+                img
+                    margin-left: -120px
+    /*стилизация slick-dots*/
+    .slick-dots
+        margin-left: -10px 
+
+    /*news*/ 
+
+    .news
+        padding-top: 100px
+        padding-bottom: 60px
+        &__flex-left
+            max-width: 472px  
+        &-item  
+            min-width: 225px
+            &__item-flex
+               min-width: 225px  
+    .item-3
+        width: 225px
+        img
+            width: 80%
+    .item-4
+        min-height: 600px
+
+    /*reviews*/
+    .reviews
+        padding-bottom: 40px
+
+    /*last-chance*/
+    .last-chance
+        &__items
+            &-flex
+                margin-right: 20px
+    
+    /*footer*/
+    .footer__license::after
+        min-width: 984px
+
+@media screen and ( max-width: 768px )
+    body.lock
+        overflow: hidden
+    .container
+        max-width: 728px
+        margin: 0 auto
+    .background-color
+        height: 580px
+
+    /*header*/
+    .header
+        margin-top: 30px
+        &__logo
+            z-index: 3
+        &__button
+            z-index: 3
+            margin-right: 60px
+        .container
+        position: relative
+    .header__burger
+        display: block
+        position: absolute
+        width: 25px
+        height: 20px
+        z-index: 5
+        right: 20px
+        span
+            background-color: #313133
+            position: absolute
+            width: 100%
+            height: 2px
+            left: 0
+            top: 9px
+            transition: all 0.3s ease 0s
+        &::before,
+        &::after
+            content: ''
+            background-color: #313133
+            position: absolute
+            width: 100%
+            height: 2px
+            left: 0
+            transition: all 0.3s ease 0s
+        &::before
+            top: 0
+        &::after
+            bottom: 0
+    .header__burger.active::before
+        background-color: #ffffff
+        transform: rotate(45deg)
+        top: 9px
+    .header__burger.active::after
+        background-color: #ffffff
+        transform: rotate(-45deg)
+        bottom: 9px
+    .header__burger.active span  
+        transform: scale(0) 
+    .header__menu
+        position: fixed
+        top: -200%
+        right: 0 
+        transition: all 0.3s ease 0s
+        z-index: 4
+    .header__menu.active
+        top: 0
+    .header__list
+        margin: 0
+        box-sizing: border-box
+        padding: 176px 105px
+        width: 320px
+        background-color: #303032
+        display: flex
+        flex-direction: column
+        align-items: center
+        li
+            margin-right: 0
+            margin-bottom: 65px
+    .header__link
+        color: #ffffff
+        font-size: 18px
+        line-height: 100%
+        letter-spacing: 13%
+            
+    /*products*/
+    .products
+        &-slider
+            &__flex
+                img
+                    width: 50%
+                    margin-left: -250px
+            &__content
+                h1
+                    font-size: 40px
+        &__name,
+        &__price
+            font-size: 20px
+            line-height: 27px
+        &__price-sale
+            font-size: 30px
+            line-height: 40px
+    
+    /*news*/  
+    .news-item__item-flex 
+        min-width: 728px
+        margin-bottom: 60px
+    .item-1,
+    .item-2
+        margin-bottom: 20px
+    .item-4
+        max-width: 354px
+        min-height: 289px
+        img
+            width: 60%
+    .news-item
+        min-width: 354px
+    
+    .news__flex
+        position: relative
+        &-left
+            max-width: 728px
+        &-right
+            position: absolute
+            bottom: 0
+            right: 0
+    
+    /*reviews*/
+    .slider-arrow__left
+        left: -25px    
+    .slider-arrow__right
+        right: -25px
+
+    /*last-chance*/
+    .last-chance__items:nth-child(4) 
+        display: none
+    
+    /*footer*/
+    .footer
+        &__link
+            margin-left: 30px
+        &__connection
+            flex-direction: column
+            align-items: flex-start
+            &-phone
+                margin-bottom: 20px
+        &__license
+            text-align: center
+            &::after
+                min-width: 728px
+
+@media screen and ( max-width: 425px )
+    .container
+        max-width: 385px
+        margin: 0 auto
+    .background-color
+        min-width: 50%
+        height: 360px
+
+    /*header*/
+    header
+        background-color: #FAFDFF
+    .header
+        margin-top: 0
+        padding-top: 20px
+        padding-bottom: 1px
+
+    /*products*/
+    .products
+        &-slider
+            &__flex
+                padding-top: 20px
+                flex-direction: column-reverse
+                img
+                    margin-left: 20px
+                    width: 60%
+                    margin-bottom: 60px
+        &__content
+            max-width: 385px
+            max-height: 290px
+            h1
+                font-size: 37px
+                margin-bottom: 10px
+        &__name,
+        &__price
+            line-height: 20px
+        &__price-sale
+            line-height: 30px
+        &__button-buy
+            margin-top: 15px
+            padding: 18px 154px
+    /*стилизация slick-dots*/
+    .products-slider
+        .slick-dots
+            flex-direction: row
+            bottom: -15%
+            left: 30%
+            li
+                span
+                    font-family: 'OpenSans-SemiBold', sans-serif
+                    font-size: 15px
+                    line-height: 170%
+                    color: #141215
+                    &::after
+                        content: ''
+                        box-sizing: border-box
+                        width: 41px
+                        height: 2px
+                        right: -10px
+                        position: absolute
+                        background-color: #000000
+                        opacity: 0.5
+                &.slick-active 
+                    span
+                        font-family: 'OpenSans-SemiBold', sans-serif
+                        font-size: 15px
+                        line-height: 170%
+                        color: #000000
+                        &::after
+                            background-color: #000000
+                            opacity: 1
+                            width: 41px
+                            height: 2px
+                            right: -10px
+
+    /*news*/
+    .news
+        padding-bottom: 70px
+        &__flex
+            flex-direction: column
+            &-right
+                position: relative
+                top: 20px
+        &-item
+            min-width: 385px
+    .item-3
+        img
+            width: 70%
+    .item-4
+        img
+            width: 50%
+    
+    /*reviews*/
+    .reviews
+        &-slider
+            max-width: 350px
+            margin: 0 auto    
+    .slider-arrow  
+        display: none 
+
+    /*footer*/
+    .footer
+        position: relative
+        padding-top: 40px
+        &__body
+            flex-direction: column
+            align-items: flex-start
+        &__logo
+            margin-bottom: 130px
+        &__list
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: flex-start
+        &__link
+            margin-left: 0
+            margin-right: 60px
+            margin-bottom: 20px
+        &__connection
+            position: absolute
+            top: 100px
+            margin-bottom: 0
+            flex-direction: column
+            align-items: flex-start
+            &-phone
+                margin-bottom: 20px
+        &__license
+            &::after
+                min-width: 385px
+
+@media screen and ( max-width: 375px )
+    .container
+        max-width: 335px
+        margin: 0 auto
+    .background-color
+        height: 330px
+
+    /*products*/
+    .products
+        &-slider
+            &__content
+                max-width: 330px
+                h1
+                    font-size: 27px
+                    margin-bottom: 20px
+        &__name,
+        &__price
+            line-height: 20px
+        &__price-sale
+            line-height: 30px
+        &__button-buy
+            margin-top: 15px
+            padding: 18px 125px
+    /*стилизация slick-dots*/
+    .products-slider
+        .slick-dots
+            flex-direction: row
+            bottom: -15%
+            left: 25%
+
+    /*news*/
+    .news
+        padding-bottom: 70px
+        &__flex
+            flex-direction: column
+            &-right
+                position: relative
+                top: 20px
+        &-item
+            min-width: 335px
+            &__title
+                font-size: 20px
+    
+    /*reviews*/
+    .reviews
+        padding-bottom: 20px
+        &-slider
+            max-width: 330px
+            margin: 0 auto  
+
+    /*last-chance*/
+    .last-chance
+        &__title
+            font-size: 20px
+
+    /*footer*/
+    .footer
+        &__license
+            &::after
+                min-width: 335px
+
+@media screen and ( max-width: 320px )
+    .container
+        max-width: 280px
+        margin: 0 auto
+    .background-color
+        height: 330px
+
+    /*header*/
+    .header
+        &__button
+            margin-right: 35px
+
+    /*products*/
+    .products
+        &-slider
+            &__content
+                max-width: 280px
+        &__button-buy
+            margin-top: 15px
+            padding: 18px 102px
+    /*стилизация slick-dots*/
+    .products-slider
+        .slick-dots
+            flex-direction: row
+            bottom: -15%
+            left: 20%
+
+    /*news*/
+    .news
+        padding-bottom: 70px
+        &__flex
+            flex-direction: column
+            &-right
+                position: relative
+                top: 20px
+        &-item
+            min-width: 280px
+            &__name
+                font-size: 16px
+            &__price
+                font-size: 24px
+    .item-3
+        img
+            width: 90%
+    .item-4
+        img
+            width: 70%
+
+    
+    /*reviews*/
+    .reviews
+        &-slider
+            max-width: 280px
+            margin: 0 auto  
+
+    /*last-chance*/
+    .last-chance
+        &__list
+            margin-right: 30px
+
+    /*footer*/
+    .footer
+        &__link
+            margin-right: 50px
+        &__license
+            &::after
+                min-width: 280px           
+
+             

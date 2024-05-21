@@ -1,0 +1,82 @@
+/*start section.news*/
+.news
+    padding-top: 165px
+    padding-bottom: 100px
+    &__flex
+        display: flex
+        justify-content: space-between
+        &-left
+            display: flex
+            max-width: 570px
+            flex-wrap: wrap
+            justify-content: space-between
+            align-content: space-between    
+    &-item
+        box-sizing: border-box
+        min-width: 270px
+        min-height: 289px
+        background-color: #ffffff
+        display: flex
+        flex-direction: column
+        align-items: center
+        cursor: pointer
+        &:hover
+            background-color: #FAECE9
+        &__item-flex
+            box-sizing: border-box
+            min-width:  270px
+            max-height: 289px
+            display: flex
+            align-items: center          
+        &__title
+            font-family: 'PlayfairDisplay-Bold', sans-serif
+            font-size: 28px   
+            letter-spacing: 0.05em
+            text-transform: uppercase
+            position: relative 
+            &::after
+                content: ''
+                width: 90px
+                height: 4px
+                background-color: #303032
+                display: block
+                position: absolute
+                bottom: -14px
+        &__name
+            font-family: 'OpenSans-Regular', sans-serif
+            font-size: 20px
+            line-height: 27px
+            margin-bottom: 7px
+        &__price
+            font-family: 'OpenSans-SemiBold', sans-serif
+            font-size: 28px
+            line-height: 38px
+
+/*стилизация карточек с продукцией*/
+.item-1
+    position: relative
+    padding-top: 20px
+    img
+        margin-bottom: 10px
+.item-2
+    position: relative
+.item-3
+    position: relative 
+.item-1, .item-2, .item-3  
+    .news-item__name
+        position: absolute
+        bottom: 62px
+    .news-item__price
+        position: absolute
+        bottom: 20px
+.item-4
+    min-width: 570px
+    min-height: 614px
+    position: relative
+    .news-item__name
+        position: absolute
+        bottom: 62px
+    .news-item__price
+        position: absolute
+        bottom: 20px
+/*end section.news*/

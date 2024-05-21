@@ -1,0 +1,108 @@
+/*start section.last-chance*/
+.last-chance
+    padding-bottom: 26px
+    &__title
+        font-family: 'PlayfairDisplay-Bold', sans-serif
+        font-size: 28px
+        line-height: 37px
+        letter-spacing: 0.05em
+        text-transform: uppercase
+        margin-bottom: 48px
+        position: relative
+        &::after
+            content: ''
+            box-sizing: border-box
+            background-color: #303032
+            width: 90px
+            height: 4px
+            position: absolute
+            bottom: -14px
+            left: 0
+    &__nav
+        margin-bottom: 25px    
+    &__list
+        font-family: 'OpenSans-SemiBold', sans-serif
+        font-size: 16px
+        line-height: 25px
+        color: rgba(0, 0, 0, 0.4)
+        margin-right: 48px
+        cursor: pointer 
+        input 
+            display: none
+            &:checked + span
+                color: #000000
+                text-decoration-line: underline
+
+.last-chance
+    &__slider
+        max-width: 1170px
+    &__items
+        cursor: pointer
+        &-flex
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            width: 209px
+            height: 355px
+            background-color: #FFFFFF 
+            position: relative
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05)
+            margin-right: 30px
+    &__decor-hover
+        box-sizing: border-box
+        min-width: 209px
+        height: 5px
+        background-color: #303032
+        position: absolute
+        opacity: 0
+    &__name
+        font-family: 'OpenSans-Regular', sans-serif
+        font-size: 16px
+        line-height: 22px
+        margin-top: 30px
+        margin-bottom: 3px
+        margin-left: 26px
+    &__price
+        font-family: 'OpenSans-SemiBold', sans-serif
+        font-size: 16px
+        line-height: 22px
+        color: #979798
+        text-decoration: line-through
+        margin-left: 11px
+    &__price-sale
+        font-family: 'OpenSans-SemiBold', sans-serif
+        font-size: 28px
+        line-height: 38px
+        color: #303032
+        margin-left: 26px
+    &__img
+        display: flex
+        justify-content: flex-end
+        height: 285px 
+        img
+            position: absolute
+            bottom: 0
+    &__button
+        box-sizing: border-box
+        border: none
+        background-color: #303032
+        color: #ffffff
+        font-family: 'OpenSans-Regular', sans-serif
+        font-size: 16px
+        line-height: 22px
+        letter-spacing: 0.13em
+        text-transform: uppercase
+        padding: 18px 67px 
+        position: relative
+        bottom: 14px
+        opacity: 0 
+
+.last-chance__items:hover
+    .last-chance__decor-hover,
+    .last-chance__button
+        opacity: 1
+
+.last-chance__items:focus-within
+    .last-chance__decor-hover,
+    .last-chance__button  
+        opacity: 0.7     
