@@ -167,6 +167,7 @@ button, a {
 .products-slider__content {
   max-width: 100%;
   display: flexbox;
+  max-height: 100%;
 }
 
 .products-slider__content h1 {
