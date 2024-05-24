@@ -19,7 +19,7 @@ button, a {
 }
 
 .background-color {
-  background-color: #b0b30f15;
+  background-color: #FCEAE8;
   min-width: 36%;
   height: 751px;
   position: absolute;
@@ -28,12 +28,12 @@ button, a {
   z-index: -1;
 }
 .backgroundpink {
-  background: #faece94b;
+  background: #FAECE9;
   position: absolute;
   width: 1020px;
-  height: 400px;
+  height: 500px;
   left: -9px;
-  top: 2063px;
+  top: 1963px;
   z-index: -2;
 }
 
@@ -111,12 +111,12 @@ button, a {
 }
 
 .products-slider .slick-dots {
-  max-height: 50%;
-  display: flexbox;
+  max-height: 205px;
+  display: flex;
   flex-direction: column;
   align-items: flex-end;
   position: absolute;
-  bottom: 50%;
+  bottom: 20%;
   left: 5%;
 }
 
@@ -125,8 +125,8 @@ button, a {
   align-items: center;
   justify-content: flex-end;
   margin: 0;
-  width: 100%;
-  height: 100%;
+  width: 41px;
+  height: 58px;
 }
 
 .products-slider .slick-dots li span {
@@ -155,7 +155,7 @@ button, a {
 }
 
 .products-slider__flex {
-  padding-top: 1%;
+  padding-top: 90px;
   justify-content: flex-start;
   align-items: center;
 }
@@ -165,9 +165,7 @@ button, a {
 }
 
 .products-slider__content {
-  max-width: 100%;
-  display: flexbox;
-  max-height: 100%;
+  max-width: 545px;
 }
 
 .products-slider__content h1 {
@@ -246,7 +244,7 @@ button, a {
 }
 
 .news-item:hover {
-  background-color: #9ce66b15;
+  background-color: #FAECE9;
 }
 
 .news-item__item-flex {
@@ -537,14 +535,13 @@ button, a {
 
 .last-chance__img {
   display: flex;
-  height: 60%;
-  width: 60%;
+  justify-content: flex-end;
+  height: 285px;
 }
 
 .last-chance__img img {
-  position:static;
+  position: absolute;
   bottom: 0;
-  padding-block-end: 5%;
 }
 
 .last-chance__button {
@@ -657,7 +654,7 @@ button, a {
     top: 1740px;
   }
   .container {
-    max-width: 984px;
+    max-width: 100%;
     margin: 0 auto;
   }
   .background-color {
